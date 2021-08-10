@@ -128,6 +128,7 @@ export {composer_v1beta1} from './apis/composer/v1beta1';
 export {compute_alpha} from './apis/compute/alpha';
 export {compute_beta} from './apis/compute/beta';
 export {compute_v1} from './apis/compute/v1';
+export {contactcenterinsights_v1} from './apis/contactcenterinsights/v1';
 export {container_v1} from './apis/container/v1';
 export {container_v1beta1} from './apis/container/v1beta1';
 export {containeranalysis_v1alpha1} from './apis/containeranalysis/v1alpha1';

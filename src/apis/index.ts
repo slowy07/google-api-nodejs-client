@@ -174,6 +174,10 @@ import {VERSIONS as cloudtasksVersions, cloudtasks} from './cloudtasks';
 import {VERSIONS as cloudtraceVersions, cloudtrace} from './cloudtrace';
 import {VERSIONS as composerVersions, composer} from './composer';
 import {VERSIONS as computeVersions, compute} from './compute';
+import {
+  VERSIONS as contactcenterinsightsVersions,
+  contactcenterinsights,
+} from './contactcenterinsights';
 import {VERSIONS as containerVersions, container} from './container';
 import {
   VERSIONS as containeranalysisVersions,
@@ -607,6 +611,7 @@ export const APIS: APIList = {
   cloudtrace: cloudtraceVersions,
   composer: composerVersions,
   compute: computeVersions,
+  contactcenterinsights: contactcenterinsightsVersions,
   container: containerVersions,
   containeranalysis: containeranalysisVersions,
   content: contentVersions,
@@ -835,6 +840,7 @@ export class GeneratedAPIs {
   cloudtrace = cloudtrace;
   composer = composer;
   compute = compute;
+  contactcenterinsights = contactcenterinsights;
   container = container;
   containeranalysis = containeranalysis;
   content = content;
