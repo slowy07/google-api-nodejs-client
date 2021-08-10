@@ -424,6 +424,10 @@ export namespace composer_v1beta1 {
      */
     diskSizeGb?: number | null;
     /**
+     * Optional. Deploys 'ip-masq-agent' daemon set in the GKE cluster and defines nonMasqueradeCIDRs equals to pod IP range so IP masquerading is used for all destination addresses, except between pods traffic. See: https://cloud.google.com/kubernetes-engine/docs/how-to/ip-masquerade-agent
+     */
+    enableIpMasqAgent?: boolean | null;
+    /**
      * Optional. The IPAllocationPolicy fields for the GKE cluster.
      */
     ipAllocationPolicy?: Schema$IPAllocationPolicy;
@@ -551,6 +555,10 @@ export namespace composer_v1beta1 {
      * Optional. If `true`, a Private IP Cloud Composer environment is created. If this field is set to true, `IPAllocationPolicy.use_ip_aliases` must be set to true for Cloud Composer environments in versions composer-1.*.*-airflow-*.*.*.
      */
     enablePrivateEnvironment?: boolean | null;
+    /**
+     * Optional. When enabled, IPs from public (non-RFC1918) ranges can be used for `IPAllocationPolicy.cluster_ipv4_cidr_block` and `IPAllocationPolicy.service_ipv4_cidr_block`.
+     */
+    enablePrivatelyUsedPublicIps?: boolean | null;
     /**
      * Optional. Configuration for the private GKE cluster for a Private IP Cloud Composer environment.
      */
